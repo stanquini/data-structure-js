@@ -60,10 +60,9 @@ let divideBy2 = (decNumber) => {
     console.log(divideBy2(1000));
 }());
 
+let baseConverter = (decNumber, base) =>{
 
-function baseConverter(decNumber, base){
-
-    var remStack = new Stack(),
+    let remStack = new Stack(),
         rem,
         baseString = '',
         digits = '0123456789ABCDEF';
