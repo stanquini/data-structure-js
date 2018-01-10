@@ -18,7 +18,7 @@ let Queue = (function(){
 
 
 		/*dequeue() - Remove o primeiro item da fila ( o q esta na frente). Também devolve o elemento removido */
-		dequeue(element) {
+		dequeue() {
 			let q = items.get(this);
 			let r = q.shift();
 			return r;
