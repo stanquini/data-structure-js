@@ -29,9 +29,15 @@ let PriorityQueue = (function() {
 
 			let i, qLength;
 			for (i = 0, qLength = q.length; i < qLength; i++) {
-
+	
 				if(queueElement.priority < q[i].priority) {
 
+					/*
+					Splice 
+					primeiro parametro - indice a partir de qual elemento queremos remover ou inserir os elementos
+					segundo parametro - quantidade de elementos que queremos remover
+					terceiro - valores que gostariamos de inserir no array.
+					*/
 					q.splice(i, 0, queueElement);
 					added = true;
 					break;
@@ -110,6 +116,7 @@ let PriorityQueue = (function() {
 
 	let priorityQueue = new PriorityQueue();
 
+	priorityQueue.enqueue("Maria", 3);
 	priorityQueue.enqueue("John", 2);
 	priorityQueue.enqueue("Jack", 1);
 	priorityQueue.enqueue("Camila", 1);
